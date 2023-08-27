@@ -1,0 +1,112 @@
+@charset "utf-8";
+@font-face {
+    font-family: Alkatra;
+    src: url('../resources/Alkatra-Bold.ttf') format('truetype')
+ }
+/*
+   Style sheet for the house rules page
+   date: 3/12/23
+*/
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4em;
+    padding: 0;
+    background-image: url(../images/spell_book.png);
+    background-repeat: no-repeat;
+    background-position: 91% 27%;
+    background-size: 40%;
+ }
+
+nav ul {
+    font-family: Verdana, Geneva, sans-serif;
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+ 
+nav a {
+    text-decoration: none;
+}
+
+/* Body Styles */
+
+.container1 h1 {
+    padding-top: 20px;
+    text-decoration: underline;
+}
+
+li.primary {
+    text-transform: uppercase;
+    list-style-type: upper-roman;
+}
+
+li.second, li.tert, li.quar {
+    text-transform: none;
+}
+li.second {
+    list-style-type: upper-alpha;
+}
+li.tert {
+    list-style-type: decimal;
+}
+li.quar {
+    list-style-type: lower-alpha;
+}
+
+
+/* =============================
+	Mobile Styles: 0 - 480 pixels
+   =============================
+*/
+@media only screen and (max-width: 480px){
+
+   body {
+      background-size: 0;
+   }
+
+    img.head {
+       width: 100%;
+       margin: 0;
+       padding: 0;
+    }
+   
+    img.doors {
+       width: 100%;
+       margin: 0;
+    }
+    nav.horizontal ul {
+       display: none;
+    }
+    a#navicon:hover+ul, nav.horizontal ul:hover {
+       display: block;
+    }
+ 
+    h1 {
+       line-height: 1.1em;
+    }
+ 
+    .container1, .container2 {
+       flex-basis: 100%;
+    }
+     
+    footer {
+       flex-basis: 100%;
+    }
+ }
+ 
+ /* ============================================
+    Tablet and Desktop Styles: 481px and greater 
+    ============================================
+ */
+ 
+ @media only screen and (min-width: 481px) {
+ 
+    a#navicon {
+       display: none;
+    }
+ }
