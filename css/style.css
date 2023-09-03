@@ -333,8 +333,12 @@ div#eventHeader {
 
 /* Adventure Log Styles */
 
-#jumpLog {
-   text-align: center;
+figure {
+   text-align: center; /* Center-align the figure content */
+}
+ 
+figcaption {
+   font-size: 14px;
 }
 
 .logLeftPic {

@@ -6,7 +6,7 @@
 */
 
 address, article, aside, blockquote, body, cite, 
-div, dl, dt, dd, em, figcaption, figure, footer, 
+div, dl, dt, dd, em, footer, 
 h1, h2, h3, h4, h5, h6, header, html, img, 
 li, main, nav, ol, p, section, span, ul {
    margin: 0;
