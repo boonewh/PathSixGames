@@ -14,10 +14,15 @@ fetch('../html/adventureLog.html')
       lastEntryContainer.appendChild(entryHeader);
     }
 
-    lastParagraphs.forEach(paragraph => {
+    lastParagraphs.forEach((paragraph, index) => {
       const entryParagraph = document.createElement('p');
       entryParagraph.innerHTML = paragraph.innerHTML;
       lastEntryContainer.appendChild(entryParagraph);
+
+      // Add <br> except after the last paragraph
+      if (index < lastParagraphs.length - 1) {
+        lastEntryContainer.appendChild(document.createElement('br'));
+      }
     });
   })
   .catch(error => {
