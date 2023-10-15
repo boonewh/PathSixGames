@@ -6,7 +6,7 @@ fetch('../html/adventureLog.html')
 
     const lastEntryContainer = document.getElementById('last-entry-container');
     const lastHeader = doc.querySelector('main.adLogs h4:last-of-type');
-    const lastParagraphs = Array.from(doc.querySelectorAll('main.adLogs p:nth-last-of-type(-n+3)'));
+    const lastParagraphs = Array.from(doc.querySelectorAll('main.adLogs p:nth-last-of-type(-n+4)'));
 
     if (lastHeader) {
       const entryHeader = document.createElement('h4');
