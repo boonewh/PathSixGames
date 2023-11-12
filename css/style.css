@@ -37,6 +37,10 @@ body {
    background-size: 40%;
 }
 
+main {
+   max-width: 70%;
+}
+
 /* Header Styles */
 
 header {
@@ -53,10 +57,6 @@ header {
 }
 
 /* Navigation List Styles */
-
-nav {
-   clear: both;
-}
 
 nav ul {
    display: flex;
@@ -140,7 +140,7 @@ img.doors {
   
 /* Text Styles */
 h1 {
-   color: rgb(63, 17, 11);
+   color: var(--accentColor);
    font-size: 2.3em;
    line-height: 2.4em;
    font-family: Alkatra, Verdana, Geneva, Tahoma, sans-serif;
@@ -270,6 +270,17 @@ img#tianMap {
 
 div.con2 {
    margin-bottom: 40px;
+}
+
+#gestalt {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+figcaption {
+   text-align: center;
 }
 
 /* Javascript Cast Rotation Section */
