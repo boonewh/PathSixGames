@@ -18,15 +18,10 @@ li, main, nav, ol, p, section, span, ul {
 }
 
 body {
-
    font-family: Verdana, Geneva, sans-serif;
-   font-size: 100%;
    font-weight: inherit;
    line-height: 1.2em;
-   margin: 0px;
-   padding: 0px;
    text-decoration: none;
-   vertical-align: baseline;
 }
 
 nav ul {
