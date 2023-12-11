@@ -5,10 +5,14 @@ fetch('../html/adventureLog.html')
     const doc = parser.parseFromString(data, 'text/html');
 
     const lastEntryContainer = document.getElementById('last-entry-container');
-    const lastHeader = doc.querySelector('main.adLogs h4:last-of-type');
+
+    // Fetch the title from the parsed document using the ID 'newest'
+    const lastHeader = doc.getElementById('newest');
+
     const lastParagraphs = Array.from(doc.querySelectorAll('main.adLogs p:nth-last-of-type(-n+3)'));
 
     if (lastHeader) {
+      // Create a new element to append to the main page to avoid duplicating IDs
       const entryHeader = document.createElement('h4');
       entryHeader.innerHTML = lastHeader.innerHTML;
       lastEntryContainer.appendChild(entryHeader);
