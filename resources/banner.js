@@ -1,9 +1,9 @@
 var bannerArray = [
-    "images/aelfread.jpg",
-    "images/edam.jpg",
-    "images/haldir.jpg",
-    "images/shura.jpg",
-    "images/tim.jpg"
+    "images/aelfread.png",
+    "images/edam.png",
+    "images/haldir.png",
+    "images/shura.png",
+    "images/tim.png"
 ];
 
 var headerArray = [
