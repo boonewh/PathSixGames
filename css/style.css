@@ -41,6 +41,78 @@ main {
   max-width: 70%;
 }
 
+/* Text Styles */
+h1 {
+  color: var(--accentColor);
+  font-size: 2.3em;
+  line-height: 2.4em;
+  font-family: Alkatra, Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
+
+h3 {
+  color: rgb(63, 17, 11);
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-family: Alkatra, Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 10px;
+}
+
+h4 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+h4::first-letter {
+  font-size: 2rem;
+  color: var(--accentColor);
+  float: left;
+}
+
+p {
+  font-size: 1.1em16px;
+  line-height: 1.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* Link Styles */
+a {
+  text-decoration: none;
+  color: var(--accentColor);
+}
+a:active,
+a:hover {
+  font-size: 1.2em;
+  color: grey;
+}
+
+/* Button Styles */
+button {
+  margin: 20px 0 30px 25px;
+  width: 200px;
+  height: 30px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  font-family: Alkatra, Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: var(--lightText);
+  background-color: var(--accentColor);
+}
+
+button:active,
+button:hover {
+  background-color: grey;
+}
+
+button:active,
+input[type="submit"]:active {
+  width: 170px;
+  height: 30px;
+  background-color: var(--background);
+  color: var(--accentColor);
+}
+
 /* Header Styles */
 
 header {
@@ -141,78 +213,6 @@ img.doors {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-/* Text Styles */
-h1 {
-  color: var(--accentColor);
-  font-size: 2.3em;
-  line-height: 2.4em;
-  font-family: Alkatra, Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
-  margin-top: 10px;
-}
-
-h3 {
-  color: rgb(63, 17, 11);
-  font-size: 1.5em;
-  line-height: 1.5em;
-  font-family: Alkatra, Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 10px;
-}
-
-h4 {
-  margin-top: 30px;
-  margin-bottom: 5px;
-}
-
-h4::first-letter {
-  font-size: 2rem;
-  color: var(--accentColor);
-  float: left;
-}
-
-p {
-  font-size: 1.1em16px;
-  line-height: 1.5em;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-/* Link Styles */
-a {
-  text-decoration: none;
-  color: var(--accentColor);
-}
-a:active,
-a:hover {
-  font-size: 1.2em;
-  color: grey;
-}
-
-/* Button Styles */
-button {
-  margin: 20px 0 30px 25px;
-  width: 200px;
-  height: 30px;
-  transition: transform 0.3s ease;
-  border-radius: 10px;
-  font-family: Alkatra, Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
-  color: var(--lightText);
-  background-color: var(--accentColor);
-}
-
-button:active,
-button:hover {
-  background-color: grey;
-}
-
-button:active,
-input[type="submit"]:active {
-  width: 170px;
-  height: 30px;
-  background-color: var(--background);
-  color: var(--accentColor);
 }
 
 /* Quote Styles */
@@ -321,11 +321,6 @@ figcaption {
   padding: 65px 0 0 4%;
   text-align: center;
 }
-
-img#plogo {
-  margin: 120px 0;
-}
-
 /* Event Section */
 
 div#eventHeader {
@@ -356,7 +351,7 @@ div#eventHeader {
 }
 
 figure {
-  text-align: center; /* Center-align the figure content */
+  text-align: center;
 }
 
 figcaption {
@@ -388,11 +383,6 @@ figcaption {
 .bottomLog {
   clear: both;
   margin-bottom: 650px;
-}
-
-.bottomLog2 {
-  clear: both;
-  margin-bottom: 300;
 }
 
 /* Character Page */
@@ -497,11 +487,6 @@ input[type="number"] {
   margin-right: 320px;
 }
 
-iframe {
-  width: 100%;
-  border: 1px solid black;
-}
-
 /* Lists on Reference Page */
 ul.reference li {
   margin: 0 0 3px 25px;
@@ -599,6 +584,8 @@ footer a {
     padding: 1px;
   }
 
+  /* Character Page Styles */
+
   .column1,
   .column2,
   .column3 {
@@ -613,6 +600,8 @@ footer a {
     text-align: center;
     margin: 0;
   }
+
+  /* Home Page Styles */
 
   img#tianMap {
     float: none;
@@ -659,13 +648,10 @@ footer a {
     padding: 0;
   }
 
+  /* Dice Page Styles */
+
   .dicePic {
     float: none;
-  }
-
-  iframe {
-    margin: 0;
-    width: 100%;
   }
 
   footer {
